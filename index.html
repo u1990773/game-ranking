@@ -236,7 +236,17 @@
         .refresh-button i {
             margin-right: 8px;
         }
+        .hero-logo {
+        max-width: 300px;
+        margin: 0 auto 20px;
+        display: block;
+        filter: drop-shadow(0 0 10px rgba(93, 63, 211, 0.5));
+        transition: transform 0.3s ease;
+        }
 
+        .hero-logo:hover {
+        transform: scale(1.05);
+        }
         .spinner {
             display: inline-block;
             width: 1.5rem;
@@ -306,6 +316,9 @@
 <body>
     <div class="container">
         <h1 class="game-title animation-fade-in">🏆 HALL OF FAME 🏆</h1>
+        <div class="text-center mb-4">
+        <img src="last-hero-logo.png" alt="THE LAST HERO" class="hero-logo animation-fade-in">
+        </div>
         <p class="subtitle animation-fade-in">Los mejores jugadores de todos los tiempos</p>
         
         <div class="ranking-container animation-slide-up">
